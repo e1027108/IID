@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../app.html">Buchungen</a></li>
+            <li><a href="../einzelbuchung.html">Einzelbuchung</a></li>
+            <li><a href="../regelm_buchung.html">regelmäßige Buchung</a></li>
+            <li class="active"><a href="stat_auswertung.html">Statistische Auswertung</a></li>
+            <li><a href="../einstellungen.html">Einstellungen</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <hr>
+
+   <div class="container">
+	    <form class="navbar-form navbar-left" role="search" style="width:100%;">
+		<hr style="border-color:black;">
+		    <div class="row">
+			<div class="col-lg-2">
+			    <!-- Single button -->
+			    <div class="btn-group">
+  				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Konto<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				    <li><a href="#">Alle Konten</a></li>
+    				    <li><a href="#">Konto 1</a></li>
+    				    <li><a href="#">Konto 2</a></li>
+  				</ul>
+			    </div>
+			</div>
+			<div class="col-lg-2">
+			    <!-- Single button -->
+			    <div class="btn-group">
+  				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Buchungsart<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				    <li><a href="#">Alle Buchungen</a></li>
+    				    <li><a href="#">Eingehende Buchung</a></li>
+    				    <li><a href="#">Ausgehende Buchung</a></li>
+  				</ul>
+			    </div>
+			</div>
+			<div class="col-lg-2">			    
+			    <!-- Single button -->
+			    <div class="btn-group">
+  				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Kategorie<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				    <li><a href="#">Alle Kategorien</a></li>
+    				    <li><a href="#">Essen</a></li>
+    				    <li><a href="#">Tanken</a></li>
+    				    <li><a href="#">Verträge (Handy,etc..)</a></li>
+  				</ul>
+			    </div>
+			</div>
+			<div class="col-lg-2">			    
+			    <!-- Single button -->
+			    <div class="btn-group">
+  				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Zeitraum<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				    <li><a href="../stat_auswertung_freier_zeitraum.html">Freier Zeitraum</a></li>
+    				    <li><a href="#">letzen Monat</a></li>
+    				    <li><a href="#">letztes Jahr</a></li>
+  				</ul>
+			    </div>
+			</div>
+			<div class="col-lg-4">			    
+			    <!-- Single button -->
+			    <div class="btn-group">
+  				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Diagrammart<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				    <li><a href="linechart.html">Line Chart</a></li>
+    				    <li><a href="piechart.html">Pie Chart</a></li>
+    				    <li><a href="barchart.html">Bar Chart</a></li>
+  				</ul>
+			    </div>
+			</div>
+		    </div>
+		<hr style="border-color:black;">
+	    </form>
+	</div>
+    <!-- statistische ausw. -->
+
+    <div class="container" style="margin-bottom:2%; border:1px solid black;">
+	<img src="linechart.png" alt="A linechart representation of the chosen data..">
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

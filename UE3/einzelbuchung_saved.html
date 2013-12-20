@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Webapplikation Gruppe 30</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+	 #spacing{
+		margin:1em 1em 0 0;
+		width:45%;
+		float:left;
+		}
+	</style>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="app.html">Buchungen</a></li>
+            <li class="active"><a href="einzelbuchung.html">Einzelbuchung</a></li>
+            <li><a href="regelm_buchung.html">regelmäßige Buchung</a></li>
+            <li><a href="stat_auswertung.html">Statistische Auswertung</a></li>
+            <li><a href="einstellungen.html">Einstellungen</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- form einzelbuchung -->
+    <br/>
+    <div style="margin: 0 10% 10% 10%; border: solid 1px black;">
+	<h4>Neue Buchung erfassen:</h4>
+		<form style="margin-left:5%; width:80%; margin-bottom:10%;">
+			<div style="float:left; padding-bottom:1em;">
+			<!-- Input -->
+			    <div id="spacing">
+				  <label for="date" style="width:100%;">Datum:</label>
+ 				  <input type="text" class="form-control" placeholder="Datum" name="date"><!-- wird Kalenderauswahl-->
+			    </div>
+			<!-- Input -->
+			    <div id="spacing">
+				  <label for="recipient" style="width:100%;">Empfänger:</label>
+ 				  <input type="text" class="form-control" placeholder="Zahlungsempfänger" name="recipient">
+			    </div>
+			<!-- Single button -->
+			    <div id="spacing">
+				<label for="kind" style="width:100%;">Buchungsart:</label>
+				<select class="btn btn-default dropdown-toggle" name="kind">
+    				    <option>Alle Buchungen</option>
+    				    <option>Eingehende Buchung</option>
+    				    <option>Ausgehende Buchung</option>
+				</select>
+			    </div>
+			<!-- Single button -->
+			    <div id="spacing">
+				<label for="category" style="width:100%;">Kategorie:</label>		    
+			   	<select class="btn btn-default dropdown-toggle" name="category">
+    				    <option>Alle Kategorien</option>
+    				    <option>Essen</option>
+    				    <option>Tanken</option>
+    				    <option>Verträge (Handy,etc..)</option>
+  				</select>
+			    </div>
+			<!-- Input -->
+			    <div id="spacing">
+				  <label for="type" style="width:100%;">Bezeichnung:</label>
+ 				  <input type="text" class="form-control" placeholder="Bezeichnung" name="type">
+			    </div>
+			<!-- Input -->
+			    <div id="spacing">
+				  <label for="amount" style="width:100%;">Betrag:</label>
+ 				  <input type="text" class="form-control" placeholder="Betrag" name="amount">
+			    </div>
+			<!-- Area Input -->
+			    <div id="spacing">
+				  <label for="comment" style="width:100%;">Bemerkung:</label>
+ 				  <textarea rows="4" cols="50" class="input-sm" placeholder="Bemerkung" name="comment"></textarea>
+			    </div>
+			</div>
+			<!-- Button -->
+			<button type="button" class="btn" style="margin-top=10%;"><a href="einzelbuchung_saved.html">Buchung speichern</a></button>
+			<span style="color:green;"> - gespeichert!</span>
+		</form>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

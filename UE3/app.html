@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Webapplikation Gruppe 30</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="app.html">Buchungen</a></li>
+            <li><a href="einzelbuchung.html">Einzelbuchung</a></li>
+            <li><a href="regelm_buchung.html">regelmäßige Buchung</a></li>
+            <li><a href="stat_auswertung.html">Statistische Auswertung</a></li>
+            <li><a href="einstellungen.html">Einstellungen</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+	    <form class="navbar-form navbar-left" role="search" style="width:100%;" name="form">
+		<hr style="border-color:black;">
+		    <div class="row">
+			<div class="col-lg-3">
+				<label for="account" style="width:100%;">Konto:</label>
+				<select class="btn btn-default dropdown-toggle" name="account">
+    				    <option>Alle Konten</option>
+    				    <option>Konto 1</option>
+    				    <option>Konto 2</option>
+				</select>
+			</div>
+			<div class="col-lg-3">
+				<label for="kind" style="width:100%;">Buchungsart:</label>
+				<select class="btn btn-default dropdown-toggle" name="kind">
+    				    <option>Alle Buchungen</option>
+    				    <option>Eingehende Buchung</option>
+    				    <option>Ausgehende Buchung</option>
+				</select>
+			</div>
+			<div class="col-lg-3">	
+				<label for="category" style="width:100%;">Kategorie:</label>		    
+			   	<select class="btn btn-default dropdown-toggle" name="category">
+    				    <option>Alle Kategorien</option>
+    				    <option>Essen</option>
+    				    <option>Tanken</option>
+    				    <option>Verträge (Handy,etc..)</option>
+  				</select>
+			</div>
+			<div class="col-lg-3">
+				<label for="time" style="width:100%;">Zeitspanne:</label>		    
+			   	<select class="btn btn-default dropdown-toggle" name="time" 
+				onChange="window.location.href = document.form.time.options[document.form.time.selectedIndex].value;">
+    				    <option value="#">letzen Monat</option>
+    				    <option value="#">letztes Jahr</option>7
+				<option value="app_freier_zeitraum.html">Freier Zeitraum</option>
+  				</select>
+			</div>
+		    </div>
+		<hr style="border-color:black;">
+	    </form>
+
+	<!-- bootstrap table dingsi -->
+	<table class="table table-striped" border="1">
+	    <tr>
+	    	<th>Datum</th>
+		<th>Buchungsart</th>
+		<th>Kategorie</th>
+		<th>Bemerkung</th>
+		<th>Betrag</th>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	    <tr>
+	  	<td>Test1</td>
+	  	<td>Test2</td>
+	  	<td>Test3</td>
+	  	<td>Test4</td>
+	  	<td>Test5</td>
+	    </tr>
+	</table>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
